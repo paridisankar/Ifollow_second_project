@@ -94,7 +94,7 @@ Q1
 move_base_flex is the backwards-compatible replacement for move_base.it can use existing plugins for move_base,and provides an enhanced version of the planner,controlling and recovering,providing detailed information of the current state and the plugin's feedback
 
 Q2
-It is depending up the environments if it is closed environments like room,warehouse it is posible is not posible in th open environments.
+It is depending up the environments if it is closed environments like room,warehouse it is posible, is not posible in th open environments.
 laser odometry algorithm is better than point to plane odometry
 
 Q3
