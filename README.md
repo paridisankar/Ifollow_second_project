@@ -47,6 +47,7 @@ To operate turtlebot3
  Add path planing and duplicate it rename in to globel planer and local planer an change the topic in to move base 
  Add map and duplicate it rename it in to globlcostmape and localcostmape and chance the topic in to globle for globlecostmape and change the topic int local to localcostmap
  and add the tf
+ And save the config rviz
  
  
  cd catkin_ws
