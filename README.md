@@ -32,10 +32,23 @@ To operate turtlebot3
  catkin_create_pkg turtlebot3_localization
  cd robot_localization_turtlebot3
  mkdir config
- touch ekdf_template.yaml
+ touch ekdf_localization.yaml
  mkdir launch
  touch start_filter.launch
 
+ To configure Rviz.
+ Launch
+ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+ in other termenal 
+ $ rosrun rviz rviz
+ Add robot modal
+ Add laser sensor
+ Add odomantary and duplicate it chance first odom topic in to odom and second odom topic to filtred odom
+ Add path planing and duplicate it rename in to globel planer and local planer an change the topic in to move base 
+ Add map and duplicate it rename it in to globlcostmape and localcostmape and chance the topic in to globle for globlecostmape and change the topic int local to localcostmap
+ and add the tf
+ 
+ 
  cd catkin_ws
  catkin_make
 
@@ -49,7 +62,7 @@ and to check the package
 
 Run slam node
  $ roscore
- $ export TURTLEBOT3_MODEL=burger
+ $ export TURTLEBOT3_MODEL=waffle
  $ roslaunch turtlebot3_slam turtlebot3_slam.launch
 
 Run Teleoperation Node(to move your robot using keybord)
